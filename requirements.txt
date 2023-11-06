@@ -1,6 +1,7 @@
 numpy
 datetime
 matplotlib
-torch
+# torch
 tqdm
 scipy
+opencv-python
