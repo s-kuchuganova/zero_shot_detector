@@ -1,5 +1,13 @@
-FROM python3.10
+FROM python:3
 
-COPY . .
+
+WORKDIR /app
+
+COPY main.py .
+COPY requirements.txt .
+
+RUN  apt-get update \
+  && apt-get install -y wget \
+  
 
 CMD ["python", "main.py"]
