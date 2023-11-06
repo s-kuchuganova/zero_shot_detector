@@ -29,7 +29,7 @@ start_time = datetime.datetime.now()
 
 for task in os.listdir(TASKS_DIR):
     TEXT_PROMPT = task.replace("_", " ")
-    for img in tqdm(glob(f"{os.path.join(TASKS_DIR,task)}/*.jpg")[:5]):
+    for img in tqdm(glob(f"{os.path.join(TASKS_DIR,task)}/*.jpg")):
 
         json_path = img.replace(".jpg", ".json")
         if os.stat(json_path).st_size > 2:
