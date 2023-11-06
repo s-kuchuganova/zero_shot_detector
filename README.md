@@ -1,7 +1,5 @@
 ### ДЕТЕКЦИЯ ЦЕНТРА ОБЪЕКТА НА ФОТО
 
-Для запуска выполните следующие команды внутри репозитория:
-
 ```bash
 git clone --recurse-submodules https://github.com/s-kuchuganova/zero_shot_detector.git
 cd zero_shot_detector
