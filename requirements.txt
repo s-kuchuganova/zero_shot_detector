@@ -1,7 +1,6 @@
-numpy
-datetime
-matplotlib
-# torch
-tqdm
-scipy
-opencv-python
+numpy>=1.26.1
+datetime>=5.2
+matplotlib>=3.8.1
+tqdm>=4.27
+scipy>=1.11.3
+opencv-python>=4.8.1
