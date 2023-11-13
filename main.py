@@ -41,7 +41,7 @@ start_time = datetime.datetime.now()
 
 for task in os.listdir(TASKS_DIR):
     task_dataset = CustomDataset(root_dir=TASKS_DIR, task=task, transforms=transforms)
-    dataloader = DataLoader(task_dataset, batch_size=2)
+    dataloader = DataLoader(task_dataset, batch_size=16)
     for batch in tqdm(dataloader):
         centers, logits, dists = detect(
             images=batch["image"],
