@@ -6,7 +6,7 @@ cd zero_shot_detector
 docker build -t detector .
 docker run -v <your/path/to/tasks>:/tasks detector
 ```
-Быстро ознакомиться с результатами и визуализацией можно в ноутбуке [Kuchuganova_zero_shot_object_detection_v2.ipynb](Kuchuganova_zero-shot_object_detection_v2.ipynb)
+Быстро ознакомиться с результатами и визуализацией можно в ноутбуке [Kuchuganova_zero_shot_object_detection_v2.ipynb](Kuchuganova_zero_shot_object_detection_v2.ipynb)
 
 Ход решения:
 - 
