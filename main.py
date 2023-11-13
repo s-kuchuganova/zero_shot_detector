@@ -1,12 +1,10 @@
-import json
 import os
 import numpy as np
 import datetime
 from tqdm import tqdm
 import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 import torchvision.transforms as T
-from PIL import Image
 
 
 from GroundingDINO.groundingdino.util.inference import load_model
@@ -22,6 +20,7 @@ TASKS_DIR = "/tasks"
 
 if torch.cuda.is_available():
     device = "cuda"
+
 else:
     device = "cpu"
 
